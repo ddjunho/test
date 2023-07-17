@@ -47,6 +47,79 @@
         android:layout_below="@id/title"
         android:background="#C9C9C9" />
 
+    <FrameLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="53dp">
+
+        <!-- 이미지 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/student_studying" />
+
+        <!-- 텍스트 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="250dp"
+            android:text="레슨 찾기"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/gt"
+            android:text="기브&amp;테이크의 다양한 레슨들을 만나보세요."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="end" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/content_main"
+        android:background="#FFFFFF">
+
+        <!-- 게시물 이미지 (예시로 같은 이미지 사용) -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.3"
+            android:src="@drawable/student_studying"
+            android:scaleType="fitXY" />
+
+        <!-- 게시물 제목 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="첫 번째 게시물"
+            android:textSize="24sp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:padding="4dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navigation_bar"
+        android:layout_above="@id/navigation_bar"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false" />
+
     <!-- 내비게이션 바 -->
     <LinearLayout
         android:id="@+id/navigation_bar"

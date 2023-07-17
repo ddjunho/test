@@ -1,0 +1,8 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- 개별 게시물 항목 레이아웃 코드를 여기에 두세요 -->
+
+</RelativeLayout>
