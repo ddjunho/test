@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/gt"
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/title"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/img" />
+    <!-- 기브&테이크 -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="기브&amp;테이크"
+        android:textSize="24sp"
+        android:textColor="#433FB5"
+        android:textStyle="bold" />
+
+    <!-- 검색 아이콘 -->
+    <ImageView
+        android:id="@+id/search_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_alignTop="@id/title"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/search" />
+
+    <!-- 본문과 상단 구분선 -->
+    <View
+        android:id="@+id/content_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/title"
+        android:background="#C9C9C9" />
+
+    <!-- 내비게이션 바 -->
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <!-- 홈 -->
+        <LinearLayout
+            android:id="@+id/home_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/button_background"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/home"
+                app:tint="#433FB5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="홈"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+        <!-- 레슨 찾기 -->
+        <LinearLayout
+            android:id="@+id/lesson_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/place" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="레슨 찾기"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- 채팅 -->
+        <LinearLayout
+            android:id="@+id/chat_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/chat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="채팅"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- 메뉴 -->
+        <LinearLayout
+            android:id="@+id/menu_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="메뉴"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 본문과 상단 구분선 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/navigation_bar"
+        android:background="#C9C9C9" />
+
+</RelativeLayout>
