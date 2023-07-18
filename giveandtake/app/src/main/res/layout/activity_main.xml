@@ -4,6 +4,10 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <ImageView
         android:id="@+id/gt"
         android:layout_width="64dp"
@@ -19,7 +23,6 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/top_divider"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="기브&amp;테이크"
@@ -51,7 +54,7 @@
         android:id="@+id/content_main"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_marginTop="53dp">
+        android:layout_below="@id/content_divider">
 
         <!-- 이미지 -->
         <ImageView
@@ -107,18 +110,7 @@
             android:textColor="#333333"
             android:textStyle="bold"
             android:padding="4dp" />
-
     </LinearLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/postsRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/navigation_bar"
-        android:layout_above="@id/navigation_bar"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:clipToPadding="false" />
 
     <!-- 내비게이션 바 -->
     <LinearLayout
