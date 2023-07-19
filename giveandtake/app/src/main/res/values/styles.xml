@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar"> <!-- 전체 화면 모드를 사용하고 상단 액션 바를 감춥니다 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

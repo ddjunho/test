@@ -7,4 +7,5 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="navigation_item_color">#433FB5</color> <!-- 네비게이션 바 아이템 색상 -->
 </resources>
